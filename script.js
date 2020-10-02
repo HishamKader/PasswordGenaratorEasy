@@ -26,10 +26,14 @@ function generate(){
 document.getElementById("length").innerHTML = "length: 8";
 
 // function to set length based on slider position
-document.getElementById("slider").oninput = function()
+document.getElementById("slider").oninput = function(){
+
+    if(document.getElementById("slider").value >0){
+        document.getElementById("length").innerHTML = "length: " + document.getElementById("slider").value;
+    }
 
 
-
+}
 
 
 

@@ -1,1 +1,1 @@
-# rut-hw3-passwordgenarator
+passwordgenaratoreasy

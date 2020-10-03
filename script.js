@@ -22,7 +22,7 @@ function generate(){
 
 }
 
-// set defualt length display of 25
+// set defualt length display of 68
 document.getElementById("length").innerHTML = "length: 68";
 
 // function to set length based on slider position

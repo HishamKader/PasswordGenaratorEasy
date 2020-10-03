@@ -18,12 +18,12 @@ function generate(){
     document.getElementById("display").value = password;
 
     // add password to previously generated passwords section
-    document.getElementById("lastNums").innerHTML
+    document.getElementById("lastNums").innerHTML += password + "<br />"
 
 }
 
 // set defualt length display of 25
-document.getElementById("length").innerHTML = "length: 8";
+document.getElementById("length").innerHTML = "length: 68";
 
 // function to set length based on slider position
 document.getElementById("slider").oninput = function(){
@@ -31,12 +31,22 @@ document.getElementById("slider").oninput = function(){
     if(document.getElementById("slider").value >0){
         document.getElementById("length").innerHTML = "length: " + document.getElementById("slider").value;
     }
+    else{
+        document.getElementById("length").innerHTML = "Lenght: 8"
+    }
 
 
 }
 
+// function to copy password to clipboard
+function copyPassword(){
 
+    document.getElementById("display").querySelector();
 
+    document.execCommand("Copy")
+
+    alert("Password copied to clipboard!")
+}
 
 
 
